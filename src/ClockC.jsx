@@ -12,15 +12,15 @@ export default class Clock extends Component {
          nombre: 'Martín',
          apellidos: 'San José'
       };
-   }
+   };
    componentDidMount(){
       this.timerID = setInterval (
          () => this.tick(), 1000
       );
-   }
+   };
    componentWillUnmount() {
       clearInterval (this.timerID);
-   }
+   };
    render() {
       return (
          <div>
@@ -29,7 +29,7 @@ export default class Clock extends Component {
             <h1>Edad: {this.state.edad}</h1>
          </div>
       )
-   }
+   };
    tick(){
       this.setState((prevState) => {
          let edad = prevState.edad +1;

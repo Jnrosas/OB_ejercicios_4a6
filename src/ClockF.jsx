@@ -36,6 +36,6 @@ const ClockF = () => {
 
     </div>
   );
-}
+};
 
 export default ClockF;
